@@ -167,7 +167,7 @@ async def echo(bot, update):
             json.dump(response_json, outfile, ensure_ascii=False)
         # logger.info(response_json)
         if (response_json.get("uploader") == "SSC VIDYALAYA") or (response_json.get("uploader") == "KD LIVE"):
-            await update.reply_text("sorry can't download the video it's an copyright content!", quote=True)
+            await update.reply_text("sorry can't download the video it's an copyright content!")
             return
         inline_keyboard = []
         duration = None
