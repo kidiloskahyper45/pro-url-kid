@@ -166,6 +166,9 @@ async def echo(bot, update):
         with open(save_ytdl_json_path, "w", encoding="utf8") as outfile:
             json.dump(response_json, outfile, ensure_ascii=False)
         # logger.info(response_json)
+        if (response_json.get("uploader") == "SSC VIDYALAYA") or (response_json.get("uploader") == "KD LIVE"):
+            await update.reply_text("sorry can't download the video it's an copyright content!", quote=True)
+            return
         inline_keyboard = []
         duration = None
         if "duration" in response_json:
