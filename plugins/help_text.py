@@ -49,7 +49,7 @@ async def help_user(bot, update):
 @pyrogram.Client.on_message(pyrogram.Filters.command(["me"]))
 async def get_me_info(bot, update):
     # logger.info(update)
-    TRChatBase(update.from_user.id, update.text, "/me")
+    TRChatBase(update.from_user.id, update.text, "/meeh")
     chat_id = str(update.from_user.id)
     chat_id, plan_type, expires_at = GetExpiryDate(chat_id)
     await bot.send_message(
