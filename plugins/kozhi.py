@@ -11,8 +11,8 @@ async def tip(bot, update):
 
     await bot.send_message(
         chat_id=update.chat.id,
-        caption = """Hello,
-This is a Telegram URL Upload Bot!
+        caption = """Hello🚴,
+This is a Telegram URL Upload 🛸Bot!
 <b>Please send me any direct download URL Link, i can upload to telegram as File/Video</b>
 /help for more details..
 Support Group :@TGB_Support""",
