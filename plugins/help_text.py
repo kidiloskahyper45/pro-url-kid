@@ -64,6 +64,9 @@ async def get_me_info(bot, update):
 
 @pyrogram.Client.on_message(pyrogram.Filters.command(["start"]))
 async def tip(bot, update):
+        # logger.info(update)
+    TRChatBase(update.from_user.id, update.text, "/me")
+
     await bot.send_photo(
         chat_id=update.chat.id,
         caption = """Hello,
