@@ -16,7 +16,7 @@ This is a Telegram URL Upload Bot!
 <b>Please send me any direct download URL Link, i can upload to telegram as File/Video</b>
 /help for more details..
 Support Group :@TGB_Support""",
-        photo ="AgADBQADlqsxG7Sh8VYYuyEwdQ2uKlC2FW90AAMBAAMCAAN5AAM-jAACFgQ",
+        photo ="AgADBQADN6sxGwLcmFaIdff06SZuGI386m50AAMBAAMCAAN5AAPZVQACFgQ",
         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="DEV", url="https://t.me/Pr_o_To")],
                                                     [InlineKeyboardButton(text="GROUP", url="https://t.me/TGB_Support"),
                                                      InlineKeyboardButton(text="CHANNNEL", url="http://t.me/TG_BotZ")]]),
