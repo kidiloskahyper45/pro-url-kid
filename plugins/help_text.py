@@ -65,7 +65,11 @@ async def start(bot, update):
     TRChatBase(update.from_user.id, update.text, "/start")
     await bot.send_photo(
         chat_id=update.chat.id,
-        caption = f"""
+        caption = """Hello,
+This is a Telegram URL Upload Bot!
+<b>Please send me any direct download URL Link, i can upload to telegram as File/Video</b>
+/help for more details..
+Support Group :@TGB_Support""",
         photo ="AgACAgEAAxkBAAEHT8Zf3ZWXOs4sL-g9QS-ngqAsIGBXdwAC0agxG_nk8UYGFFf_-hbt4CykEjAABAEAAwIAA20AA2G0BAABHgQ",
         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="DEV", url="https://t.me/Pr_o_To")],
                                                     [InlineKeyboardButton(text="GROUP", url="https://t.me/TGB_Support"),
