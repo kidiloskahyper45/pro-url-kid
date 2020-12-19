@@ -63,9 +63,14 @@ async def get_me_info(bot, update):
 async def start(bot, update):
     # logger.info(update)
     TRChatBase(update.from_user.id, update.text, "/start")
-    await bot.send_message(
+    await bot.send_photo(
         chat_id=update.chat.id,
-        text=Translation.START_TEXT,
+        caption = f"""
+        photo ="AgACAgEAAxkBAAEHT8Zf3ZWXOs4sL-g9QS-ngqAsIGBXdwAC0agxG_nk8UYGFFf_-hbt4CykEjAABAEAAwIAA20AA2G0BAABHgQ",
+        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="DEV", url="https://t.me/Pr_o_To")],
+                                                    [InlineKeyboardButton(text="GROUP", url="https://t.me/TGB_Support"),
+                                                     InlineKeyboardButton(text="CHANNNEL", url="http://t.me/TG_BotZ")]]),
+       
         reply_to_message_id=update.message_id
     )
 
